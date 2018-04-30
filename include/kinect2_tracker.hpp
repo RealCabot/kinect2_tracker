@@ -357,6 +357,7 @@ public:
     {
       const nite::UserData& user = users[i];
       updateUserState(user, userTrackerFrame_.getTimestamp());
+      /*
       if (user.isNew())
       {
         userTracker_.startSkeletonTracking(user.getId());
@@ -403,6 +404,7 @@ public:
         // Add the user's ID
         ids.users.push_back(int(user.getId()));
       }
+      */
       if(user.isVisible()){
         // Adding center of mass of users
         points.users.push_back(int(user.getId()));
